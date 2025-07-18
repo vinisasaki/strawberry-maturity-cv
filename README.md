@@ -1,38 +1,25 @@
 # Strawberry Maturity Classification (Classical Computer Vision)
 
-A Classical Computer Vision project using traditional techniques—no machine learning or neural networks—to segment and classify strawberry ripeness stages from images.
-
----
-
 ## 📝 Description
 
-This repository contains:
-
-- **strawberry_maturity_cv.py**  
-  Main script implementing:  
-  1. **Pre-processing** (filtering, histogram equalization)  
-  2. **Segmentation** (thresholding, morphological operations, Watershed)  
-  3. **Feature Extraction** (area, mean color, contours, bounding boxes)  
-  4. **Rule-based Classification** (green, mid-ripe, ripe)
-
-- **dataset/**  
-  Folder with sample strawberry images for testing and evaluation.
+A Classical Computer Vision project using traditional techniques—**no machine learning or neural networks**—to segment and classify strawberry ripeness stages from images.
 
 ---
 
 ## 📂 Structure
 
 - **strawberry_maturity_cv.py**  
-  Main training/evaluation script
+  Main training/evaluation script.
 
 - **dataset/**  
-  Strawberry image dataset
-
-- **.gitignore**  
-  Specifies files/folders to ignore
+  Folder with sample strawberry images for testing and evaluation.
 
 - **README.md**
-  This documentation file
+  This documentation file.
+
+- **results/**  
+  Folder with result images.
+    
 ---
 
 ## 🧪 Pipeline Overview
@@ -51,6 +38,12 @@ This repository contains:
   - **Unripe**
   - **Maturing**
   - **Ripe**
+
+---
+
+## 📷 Example Results
+
+![Segmented](results/example.png)
 
 ---
 
