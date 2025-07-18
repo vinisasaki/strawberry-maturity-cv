@@ -35,11 +35,30 @@ This repository contains:
   This documentation file
 ---
 
+## 🧪 Pipeline Overview
+
+### 🔍 Pre-processing
+- Histogram equalization and noise filtering for consistent lighting
+- Color-space conversion (RGB → HSV / LAB) to enhance contrast
+
+### ✂️ Segmentation
+- Multi-level Otsu thresholding and morphological operations (opening/closing)
+- Watershed and contour analysis to separate adjacent berries
+
+### 📐 Feature Extraction & Rule-based Classification
+- Extraction of area, mean color, bounding boxes, and shape metrics
+- Rule-based labeling using `if-then` logic:
+  - **Unripe**
+  - **Maturing**
+  - **Ripe**
+
+---
+
 ## 🚀 How to Run
 
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/vinisasaki/ComputerVision/strawberry-maturity.git
+   git clone https://github.com/vinisasaki/strawberry-maturity-cv.git
    cd strawberry-maturity-cv
 2. **(Optional) Set up a virtual environment:**  
     ```bash
